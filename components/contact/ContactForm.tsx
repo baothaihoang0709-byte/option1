@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { Button } from "@/components/common";
 import { useLanguage } from "@/lib/i18n";
 
 interface FormState {
@@ -195,13 +196,14 @@ export function ContactForm() {
           </div>
 
           <div className="pt-2 flex flex-wrap items-center gap-3">
-            <button
+            <Button
               type="button"
+              variant="primary"
+              size="sm"
               onClick={handleReset}
-              className="inline-flex items-center justify-center rounded-lg bg-blue-600 px-4 py-2 text-xs font-semibold text-white shadow-xs hover:bg-blue-700 focus-visible:ring-2 focus-visible:ring-blue-600 cursor-pointer"
             >
               {formText.buttonReset}
-            </button>
+            </Button>
           </div>
         </div>
       ) : (
@@ -375,7 +377,7 @@ export function ContactForm() {
               className="w-full sm:w-auto inline-flex items-center justify-center rounded-xl bg-blue-600 px-7 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-700 active:bg-blue-800 transition-all outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 cursor-pointer"
             >
               <span>{formText.buttonSubmit}</span>
-              <span className="ml-2 text-xs font-normal text-blue-200">{formText.buttonSubmitDemo}</span>
+              <span className="ml-2 text-xs font-normal text-white">{formText.buttonSubmitDemo}</span>
             </button>
 
             <span className="text-xs text-slate-500 text-center sm:text-right">

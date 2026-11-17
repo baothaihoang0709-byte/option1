@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-export type ButtonVariant = "primary" | "secondary" | "outline" | "ghost" | "link";
+export type ButtonVariant = "primary" | "secondary" | "secondary-dark" | "outline" | "ghost" | "link";
 export type ButtonSize = "sm" | "md" | "lg";
 
 export interface ButtonBaseProps {
@@ -40,11 +40,13 @@ const variantStyles: Record<ButtonVariant, string> = {
   primary:
     "bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800 shadow-sm hover:shadow-md hover:shadow-blue-500/20 focus-visible:ring-blue-600",
   secondary:
-    "bg-white text-slate-800 border border-slate-300 hover:bg-slate-50 hover:border-slate-400 hover:text-slate-900 focus-visible:ring-slate-400",
+    "bg-white text-slate-800 border border-slate-300 hover:bg-slate-50 hover:border-slate-400 hover:text-slate-900 active:bg-slate-100 active:border-slate-400 shadow-xs focus-visible:ring-blue-600",
+  "secondary-dark":
+    "bg-slate-800 text-white border border-slate-700 hover:bg-slate-700 hover:border-slate-600 hover:text-white active:bg-slate-900 active:border-slate-500 shadow-sm focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900",
   outline:
     "bg-transparent text-blue-600 border border-blue-600 hover:bg-blue-50/80 active:bg-blue-100 focus-visible:ring-blue-600",
   ghost:
-    "bg-transparent text-slate-700 hover:bg-slate-100 active:bg-slate-200 hover:text-slate-900 focus-visible:ring-slate-400",
+    "bg-transparent text-slate-700 hover:bg-slate-100 active:bg-slate-200 hover:text-slate-900 focus-visible:ring-blue-600",
   link:
     "bg-transparent text-blue-600 hover:text-blue-700 underline-offset-4 hover:underline p-0 min-h-0 focus-visible:ring-blue-600",
 };

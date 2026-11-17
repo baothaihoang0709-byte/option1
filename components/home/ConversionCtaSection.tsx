@@ -62,9 +62,9 @@ export function ConversionCtaSection() {
               </Button>
               <Button
                 href="/services"
-                variant="secondary"
+                variant="secondary-dark"
                 size="lg"
-                className="w-full sm:w-auto min-w-[180px] bg-slate-800 text-white border-slate-700 hover:bg-slate-700 hover:border-slate-600 hover:text-white"
+                className="w-full sm:w-auto min-w-[180px]"
               >
                 {data.ctaSecondary}
               </Button>
