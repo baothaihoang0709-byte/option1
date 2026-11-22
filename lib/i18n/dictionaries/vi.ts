@@ -3,6 +3,7 @@ import { TranslationDictionary } from "../types";
 export const vi: TranslationDictionary = {
   common: {
     skipToContent: "Chuyển đến nội dung chính",
+    breadcrumbAria: "Đường dẫn điều hướng",
     header: {
       nav: {
         home: "Trang chủ",
@@ -15,6 +16,9 @@ export const vi: TranslationDictionary = {
       mobileMenuOpenAria: "Mở menu điều hướng",
       mobileMenuCloseAria: "Đóng menu điều hướng",
       mobileLangLabel: "Ngôn ngữ",
+      mainNavAria: "Điều hướng chính",
+      mobileNavAria: "Điều hướng di động",
+      logoHomeAria: "BIZWORK-IT — Về trang chủ",
     },
     footer: {
       tagline: "Chúng tôi giúp công nghệ trở nên dễ tiếp cận!",
@@ -62,6 +66,14 @@ export const vi: TranslationDictionary = {
         badgeRoiSub: "Tiết kiệm Ngân sách IT",
         badgeSatTitle: "Cam kết Hài lòng",
         badgeSatSub: "Dịch vụ Tận tâm",
+        diagramAria: "Sơ đồ kiến trúc quản lý hạ tầng BIZWORK-IT",
+        diagramCoreServer: "MÁY CHỦ CHÍNH",
+        diagramMultiOs: "Đa nền tảng",
+        diagramOsPlatforms: "Win / Linux",
+        diagramNetworks: "Hệ thống mạng",
+        diagramManagedLan: "Quản trị LAN",
+        diagramDatabases: "Cơ sở dữ liệu",
+        diagramMaintenance: "Bảo trì",
       },
     },
     valuePillars: {
@@ -94,7 +106,7 @@ export const vi: TranslationDictionary = {
       subtitle:
         "Chúng tôi tập trung vào hai lĩnh vực trọng yếu mang lại hiệu quả cao nhất cho doanh nghiệp vừa và nhỏ: hỗ trợ kỹ thuật hạ tầng trực tiếp và quản trị IT thuê ngoài chủ động.",
       highlightsTitle: "Phạm vi Giải pháp Trọng tâm",
-      catalogButton: "Xem Toàn bộ Danh mục Dịch vụ →",
+      catalogButton: "Xem Toàn bộ Danh mục Dịch vụ",
       group1: {
         badge: "Hỗ trợ Kỹ thuật Cốt lõi",
         title: "Hỗ trợ Kỹ thuật & Hạ tầng",
@@ -130,7 +142,7 @@ export const vi: TranslationDictionary = {
       subtitle:
         "Luồng làm việc bài bản đảm bảo cột mốc rõ ràng, hạn chế tối đa gián đoạn kinh doanh và dự đoán chính xác chi phí từ khi tiếp nhận đến hỗ trợ liên tục.",
       supportLink:
-        "Tìm hiểu thêm về hồ sơ doanh nghiệp và triết lý dịch vụ của chúng tôi →",
+        "Tìm hiểu thêm về hồ sơ doanh nghiệp và triết lý dịch vụ của chúng tôi",
       step1: {
         title: "Khảo sát & Tiếp nhận",
         subtitle: "Thấu hiểu hiện trạng doanh nghiệp",
@@ -211,7 +223,7 @@ export const vi: TranslationDictionary = {
       inquiriesLabel: "Kênh Giao tiếp & Tư vấn",
       inquiriesValue:
         "Mọi yêu cầu dự án và trao đổi chính thức được xử lý an toàn qua cổng liên hệ trực tuyến.",
-      cardButton: "Kết nối với Đội ngũ qua Liên hệ →",
+      cardButton: "Kết nối với Đội ngũ qua Liên hệ",
     },
     customerCommitment: {
       badge: "Cam kết Khách hàng",
@@ -248,7 +260,7 @@ export const vi: TranslationDictionary = {
           "Cấu hình hệ thống, quản lý người dùng và bản vá bảo mật",
           "Chia sẻ tệp đa nền tảng và tương thích môi trường làm việc",
         ],
-        link: "Tìm hiểu chi tiết các dịch vụ của chúng tôi →",
+        link: "Tìm hiểu chi tiết các dịch vụ của chúng tôi",
       },
       strength2: {
         badge: "Hạ tầng",
@@ -260,7 +272,7 @@ export const vi: TranslationDictionary = {
           "Khắc phục sự cố nghẽn mạng, xung đột IP và gián đoạn kết nối",
           "Cấu hình truy cập từ xa an toàn cho nhân sự làm việc linh hoạt",
         ],
-        link: "Tìm hiểu chi tiết các dịch vụ của chúng tôi →",
+        link: "Tìm hiểu chi tiết các dịch vụ của chúng tôi",
       },
       strength3: {
         badge: "Độ tin cậy Dữ liệu",
@@ -272,7 +284,7 @@ export const vi: TranslationDictionary = {
           "Thiết lập quy trình sao lưu tự động và phục hồi sẵn sàng",
           "Hỗ trợ các dự án vừa và nhỏ duy trì kho dữ liệu ổn định",
         ],
-        link: "Tìm hiểu chi tiết các dịch vụ của chúng tôi →",
+        link: "Tìm hiểu chi tiết các dịch vụ của chúng tôi",
       },
     },
     partnershipCta: {
@@ -323,7 +335,7 @@ export const vi: TranslationDictionary = {
           "Cài đặt máy trạm, quản lý hồ sơ người dùng và cập nhật hệ thống",
           "Chẩn đoán sự cố treo máy, xung đột trình điều khiển và suy giảm hiệu năng",
         ],
-        linkText: "Trao đổi về phạm vi hỗ trợ này →",
+        linkText: "Trao đổi về phạm vi hỗ trợ này",
       },
       domain2: {
         badge: "Hạ tầng Văn phòng",
@@ -335,7 +347,7 @@ export const vi: TranslationDictionary = {
           "Xử lý nghẽn mạng, trùng địa chỉ IP và chia sẻ máy in văn phòng",
           "Hỗ trợ cấu hình kết nối từ xa an toàn cho nhân viên làm việc phân tán",
         ],
-        linkText: "Trao đổi về phạm vi hỗ trợ này →",
+        linkText: "Trao đổi về phạm vi hỗ trợ này",
       },
       domain3: {
         badge: "Độ tin cậy Dữ liệu",
@@ -347,7 +359,7 @@ export const vi: TranslationDictionary = {
           "Thiết lập quy trình sao lưu định kỳ tự động",
           "Hỗ trợ các dự án quy mô vừa và nhỏ duy trì lưu trữ dữ liệu an toàn",
         ],
-        linkText: "Trao đổi về phạm vi hỗ trợ này →",
+        linkText: "Trao đổi về phạm vi hỗ trợ này",
       },
       bannerTitle: "Bạn cần hỗ trợ xử lý sự cố hoặc thiết lập hệ thống đang chạy?",
       bannerDesc:
@@ -502,14 +514,16 @@ export const vi: TranslationDictionary = {
       bannerSuccessTitle: "Kiểm tra Tính hợp lệ Thành công (Client Demo)",
       bannerSuccessDesc:
         "Toàn bộ các trường dữ liệu đã vượt qua bước kiểm tra định dạng nghiêm ngặt (Họ tên, cấu trúc Email hợp lệ, danh mục dịch vụ đã chọn và độ dài tin nhắn).",
-      bannerPendingTitle: "Thông báo: Hệ thống Gửi Backend Đang Chờ Cấu hình",
+      bannerPendingTitle: "Thông báo: Bản Thử Nghiệm Kiểm Tra Phía Client",
       bannerPendingDesc:
-        "Theo đúng phạm vi kỹ thuật của dự án (Task 13: Giao diện & Kiểm tra Client), chức năng gửi email trực tiếp và cơ sở dữ liệu sẽ được kết nối ở giai đoạn sau. Không có dữ liệu khách hàng nào bị lưu trữ ngầm hoặc gửi giả mạo qua mạng.",
+        "Biểu mẫu này hiện chỉ thực hiện kiểm tra tính hợp lệ của dữ liệu ở phía giao diện (client-side). Chức năng gửi email trực tiếp và lưu trữ cơ sở dữ liệu đang chờ tích hợp backend ở giai đoạn sau. Không có dữ liệu khách hàng nào được lưu trữ hoặc truyền qua mạng.",
       buttonReset: "Đặt lại Biểu mẫu để Thử lại",
       privacyNotice:
-        "Bảo mật & Quyền riêng tư: Thông tin được cung cấp chỉ phục vụ mục đích đánh giá yêu cầu kinh doanh và tuyệt đối không chia sẻ cho bên thứ ba. (Chức năng gửi trực tiếp đang chờ cấu hình backend).",
+        "Biểu mẫu hiện chỉ kiểm tra tính hợp lệ của thông tin ngay trên trình duyệt. Không có thông tin nào được gửi đến hoặc lưu trữ bởi BIZWORK-IT. Chức năng gửi email và lưu trữ dữ liệu an toàn sẽ được triển khai sau khi tích hợp backend.",
       buttonSubmit: "Kiểm tra & Gửi Yêu cầu",
       buttonSubmitDemo: "(Bản thử nghiệm Client)",
+      buttonValidating: "Đang kiểm tra...",
+      messageHint: "Yêu cầu tối thiểu 10 ký tự",
       footerAssurance: "Cam kết Hài lòng Tuyệt đối • May đo cho SMBs",
     },
     whatHappensNext: {
@@ -548,5 +562,13 @@ export const vi: TranslationDictionary = {
       assurance:
         "BIZWORKIT (S) PTE LTD • Singapore • Dịch vụ Hỗ trợ Công nghệ Chuyên nghiệp",
     },
+  },
+  notFound: {
+    badge: "Lỗi 404",
+    title: "Không Tìm Thấy Trang",
+    description:
+      "Trang bạn đang tìm kiếm không tồn tại hoặc đã được di chuyển. Vui lòng sử dụng thanh điều hướng hoặc quay về trang chủ.",
+    buttonHome: "Về Trang Chủ",
+    buttonContact: "Liên Hệ Hỗ Trợ",
   },
 };

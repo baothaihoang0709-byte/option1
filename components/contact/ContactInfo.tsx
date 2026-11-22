@@ -30,9 +30,9 @@ export function ContactInfo() {
               </svg>
             </span>
             <div>
-              <p className="text-xs font-bold tracking-tight text-slate-900">
+              <h3 className="text-xs font-bold tracking-tight text-slate-900">
                 {info.cardTitle}
-              </p>
+              </h3>
               <p className="text-[11px] text-slate-500">{info.cardSub}</p>
             </div>
           </div>
@@ -43,7 +43,7 @@ export function ContactInfo() {
 
         <div className="space-y-4">
           <div>
-            <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
+            <p className="text-[11px] font-bold uppercase tracking-wider text-slate-500">
               {info.entityLabel}
             </p>
             <p className="mt-0.5 text-base font-extrabold text-slate-900">
@@ -52,7 +52,7 @@ export function ContactInfo() {
           </div>
 
           <div className="border-t border-slate-100 pt-3">
-            <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
+            <p className="text-[11px] font-bold uppercase tracking-wider text-slate-500">
               {info.locationLabel}
             </p>
             <p className="mt-0.5 text-sm font-semibold text-slate-800 flex items-center gap-1.5">
@@ -62,7 +62,7 @@ export function ContactInfo() {
           </div>
 
           <div className="border-t border-slate-100 pt-3">
-            <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
+            <p className="text-[11px] font-bold uppercase tracking-wider text-slate-500">
               {info.focusLabel}
             </p>
             <p className="mt-0.5 text-xs text-slate-600 leading-relaxed">
@@ -113,9 +113,9 @@ export function ContactInfo() {
 
       {/* Service Assurance Card */}
       <div className="rounded-2xl border border-blue-100 bg-blue-50/50 p-6">
-        <h4 className="text-xs font-bold uppercase tracking-wider text-blue-900">
+        <h3 className="text-xs font-bold uppercase tracking-wider text-blue-900">
           {info.commitmentTitle}
-        </h4>
+        </h3>
         <p className="mt-1.5 text-xs leading-relaxed text-slate-600">
           {info.commitmentText}
         </p>

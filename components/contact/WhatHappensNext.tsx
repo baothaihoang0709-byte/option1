@@ -74,7 +74,7 @@ export function WhatHappensNext() {
   return (
     <section
       aria-labelledby="what-happens-next-heading"
-      className="py-16 sm:py-24 bg-white border-t border-slate-200/80"
+      className="py-16 sm:py-24 bg-white"
     >
       <Container>
         <SectionHeader
@@ -112,14 +112,15 @@ export function WhatHappensNext() {
                   {step.description}
                 </p>
               </div>
-
-              <div className="mt-6 pt-4 border-t border-slate-200/60">
-                <span className="text-[11px] font-medium text-slate-500">
-                  {data.footerNote}
-                </span>
-              </div>
             </div>
           ))}
+        </div>
+
+        {/* Unified Consultation Note */}
+        <div className="mt-12 text-center">
+          <span className="inline-flex items-center rounded-full bg-slate-100 px-3.5 py-1 text-xs font-medium text-slate-600">
+            {data.footerNote}
+          </span>
         </div>
       </Container>
     </section>

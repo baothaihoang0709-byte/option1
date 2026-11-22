@@ -41,7 +41,7 @@ export function TechVisual() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             role="img"
-            aria-label="BIZWORK-IT Infrastructure Management Architecture diagram"
+            aria-label={visual.diagramAria}
           >
             {/* Connecting lines */}
             <path
@@ -88,7 +88,7 @@ export function TechVisual() {
                 fontFamily="sans-serif"
                 fontWeight="bold"
               >
-                CORE SERVER
+                {visual.diagramCoreServer}
               </text>
             </g>
 
@@ -119,7 +119,7 @@ export function TechVisual() {
                 fontFamily="sans-serif"
                 fontWeight="bold"
               >
-                Multi-OS
+                {visual.diagramMultiOs}
               </text>
               <text
                 x="42"
@@ -128,7 +128,7 @@ export function TechVisual() {
                 fontSize="8"
                 fontFamily="sans-serif"
               >
-                Win / Linux
+                {visual.diagramOsPlatforms}
               </text>
             </g>
 
@@ -159,7 +159,7 @@ export function TechVisual() {
                 fontFamily="sans-serif"
                 fontWeight="bold"
               >
-                Networks
+                {visual.diagramNetworks}
               </text>
               <text
                 x="42"
@@ -168,7 +168,7 @@ export function TechVisual() {
                 fontSize="8"
                 fontFamily="sans-serif"
               >
-                Managed LAN
+                {visual.diagramManagedLan}
               </text>
             </g>
 
@@ -198,7 +198,7 @@ export function TechVisual() {
                 fontFamily="sans-serif"
                 fontWeight="bold"
               >
-                Databases
+                {visual.diagramDatabases}
               </text>
               <text
                 x="42"
@@ -207,7 +207,7 @@ export function TechVisual() {
                 fontSize="8"
                 fontFamily="sans-serif"
               >
-                Maintenance
+                {visual.diagramMaintenance}
               </text>
             </g>
           </svg>

@@ -111,7 +111,8 @@ export function ServicesOverviewSection() {
         {/* Global Catalog Button */}
         <div className="mt-12 text-center">
           <Button href="/services" variant="secondary" size="md">
-            {data.catalogButton} →
+            <span>{data.catalogButton}</span>
+            <span aria-hidden="true" className="ml-1.5">→</span>
           </Button>
         </div>
       </Container>

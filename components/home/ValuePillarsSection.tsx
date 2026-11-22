@@ -96,7 +96,7 @@ export function ValuePillarsSection() {
           {pillars.map((pillar) => (
             <div
               key={pillar.id}
-              className="group relative flex flex-col justify-between rounded-2xl border border-slate-200/90 bg-slate-50/50 p-7 transition-all duration-300 hover:-translate-y-1 hover:border-blue-400/60 hover:bg-white hover:shadow-lg hover:shadow-blue-500/5"
+              className="group relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-slate-50/50 p-7 shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-blue-400/50 hover:bg-white hover:shadow-lg hover:shadow-blue-500/5"
             >
               <div>
                 {/* Icon & Category Tag */}
@@ -123,7 +123,7 @@ export function ValuePillarsSection() {
               </div>
 
               {/* Card Footer Link */}
-              <div className="mt-6 pt-5 border-t border-slate-200/60">
+              <div className="mt-6 pt-4 border-t border-slate-200/60">
                 <Link
                   href={pillar.href}
                   className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-700 transition-colors group-hover:gap-2.5 outline-none focus-visible:ring-2 focus-visible:ring-blue-600 rounded-sm"

@@ -53,7 +53,7 @@ export function PartnershipCta() {
                 href="/contact"
                 variant="primary"
                 size="lg"
-                className="w-full sm:w-auto min-w-[190px]"
+                className="w-full sm:w-auto min-w-[180px]"
               >
                 {data.ctaPrimary}
               </Button>
@@ -61,7 +61,7 @@ export function PartnershipCta() {
                 href="/services"
                 variant="secondary-dark"
                 size="lg"
-                className="w-full sm:w-auto min-w-[190px]"
+                className="w-full sm:w-auto min-w-[180px]"
               >
                 {data.ctaSecondary}
               </Button>

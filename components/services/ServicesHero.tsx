@@ -22,7 +22,7 @@ export function ServicesHero() {
 
       <Container>
         {/* Accessible Breadcrumb */}
-        <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-2 text-xs font-semibold text-slate-500">
+        <nav aria-label={t.common.breadcrumbAria} className="mb-6 flex items-center gap-2 text-xs font-semibold text-slate-500">
           <Link
             href="/"
             className="hover:text-blue-600 transition-colors outline-none focus-visible:ring-2 focus-visible:ring-blue-600 rounded-sm"
@@ -72,8 +72,8 @@ export function ServicesHero() {
         </div>
 
         {/* Quick Capabilities Strip */}
-        <div className="mt-12 grid grid-cols-2 gap-4 border-t border-slate-200/80 pt-8 sm:grid-cols-4 sm:gap-6">
-          <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-xs">
+        <div className="mt-12 grid grid-cols-2 gap-3 border-t border-slate-200/80 pt-8 sm:grid-cols-4 sm:gap-6">
+          <div className="rounded-xl border border-slate-200 bg-white p-3 sm:p-4 shadow-xs">
             <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
               {hero.cap1Label}
             </p>
@@ -82,7 +82,7 @@ export function ServicesHero() {
             </p>
           </div>
 
-          <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-xs">
+          <div className="rounded-xl border border-slate-200 bg-white p-3 sm:p-4 shadow-xs">
             <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
               {hero.cap2Label}
             </p>
@@ -91,7 +91,7 @@ export function ServicesHero() {
             </p>
           </div>
 
-          <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-xs">
+          <div className="rounded-xl border border-slate-200 bg-white p-3 sm:p-4 shadow-xs">
             <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
               {hero.cap3Label}
             </p>
@@ -100,7 +100,7 @@ export function ServicesHero() {
             </p>
           </div>
 
-          <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-xs">
+          <div className="rounded-xl border border-slate-200 bg-white p-3 sm:p-4 shadow-xs">
             <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
               {hero.cap4Label}
             </p>

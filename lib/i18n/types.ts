@@ -3,6 +3,7 @@ export type Language = "en" | "vi";
 export interface TranslationDictionary {
   common: {
     skipToContent: string;
+    breadcrumbAria: string;
     header: {
       nav: {
         home: string;
@@ -15,6 +16,9 @@ export interface TranslationDictionary {
       mobileMenuOpenAria: string;
       mobileMenuCloseAria: string;
       mobileLangLabel: string;
+      mainNavAria: string;
+      mobileNavAria: string;
+      logoHomeAria: string;
     };
     footer: {
       tagline: string;
@@ -57,6 +61,14 @@ export interface TranslationDictionary {
         badgeRoiSub: string;
         badgeSatTitle: string;
         badgeSatSub: string;
+        diagramAria: string;
+        diagramCoreServer: string;
+        diagramMultiOs: string;
+        diagramOsPlatforms: string;
+        diagramNetworks: string;
+        diagramManagedLan: string;
+        diagramDatabases: string;
+        diagramMaintenance: string;
       };
     };
     valuePillars: {
@@ -407,6 +419,8 @@ export interface TranslationDictionary {
       privacyNotice: string;
       buttonSubmit: string;
       buttonSubmitDemo: string;
+      buttonValidating: string;
+      messageHint: string;
       footerAssurance: string;
     };
     whatHappensNext: {
@@ -439,5 +453,12 @@ export interface TranslationDictionary {
       ctaSecondary: string;
       assurance: string;
     };
+  };
+  notFound: {
+    badge: string;
+    title: string;
+    description: string;
+    buttonHome: string;
+    buttonContact: string;
   };
 }

@@ -91,7 +91,7 @@ export function CorporateProfile() {
                     <p className="text-[11px] text-slate-500">{profile.cardSubtitle}</p>
                   </div>
                 </div>
-                <span className="inline-flex items-center rounded-full bg-emerald-50 px-2 py-0.5 text-[10px] font-bold text-emerald-700 ring-1 ring-inset ring-emerald-600/20">
+                <span className="inline-flex items-center rounded-full bg-emerald-50 px-2.5 py-0.5 text-[10px] font-bold text-emerald-700 ring-1 ring-inset ring-emerald-600/20">
                   {profile.cardVerifiedBadge}
                 </span>
               </div>

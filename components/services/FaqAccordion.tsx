@@ -55,7 +55,7 @@ export function FaqAccordion() {
           subtitle={data.subtitle}
         />
 
-        <div className="mx-auto mt-12 max-w-3xl divide-y divide-slate-200 rounded-2xl border border-slate-200 bg-white p-4 sm:p-6 shadow-xs">
+        <div className="mx-auto mt-14 max-w-3xl divide-y divide-slate-200 rounded-2xl border border-slate-200 bg-white p-4 sm:p-6 shadow-xs">
           {faqs.map((faq) => {
             const isOpen = !!openIds[faq.id];
             const buttonId = `faq-btn-${faq.id}`;
@@ -69,7 +69,7 @@ export function FaqAccordion() {
                   onClick={() => toggleItem(faq.id)}
                   aria-expanded={isOpen}
                   aria-controls={contentId}
-                  className="flex w-full items-start justify-between text-left text-sm sm:text-base font-bold text-slate-900 transition-colors hover:text-blue-600 outline-none focus-visible:ring-2 focus-visible:ring-blue-600 rounded-lg py-1 px-1 cursor-pointer"
+                  className="flex w-full items-start justify-between text-left text-sm sm:text-base font-bold text-slate-900 transition-colors hover:text-blue-600 outline-none focus-visible:ring-2 focus-visible:ring-blue-600 rounded-lg py-2.5 sm:py-2 px-1 cursor-pointer"
                 >
                   <span className="pr-4 leading-snug">{faq.question}</span>
                   <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-600 transition-transform duration-200">

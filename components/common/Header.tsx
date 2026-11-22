@@ -63,14 +63,14 @@ export function Header() {
     <header className="sticky top-0 z-40 w-full border-b border-slate-200/80 bg-white/90 backdrop-blur-md transition-all">
       <Container className="flex h-18 items-center justify-between">
         {/* Brand Logo */}
-        <div className="flex items-center">
-          <TypographicLogo size="md" />
+        <div className="flex items-center shrink-0">
+          <TypographicLogo size="md" ariaLabel={t.common.header.logoHomeAria} />
         </div>
 
         {/* Desktop Navigation Links */}
         <nav
           className="hidden items-center gap-8 lg:flex"
-          aria-label="Main Navigation"
+          aria-label={t.common.header.mainNavAria}
         >
           {navItems.map((item) => {
             const active = isActive(item.href);
@@ -107,14 +107,14 @@ export function Header() {
         </div>
 
         {/* Mobile Header Actions (Switcher on small screens + Hamburger) */}
-        <div className="flex items-center gap-2 lg:hidden">
+        <div className="flex items-center gap-1.5 sm:gap-2 lg:hidden">
           <LanguageSwitcher size="sm" />
 
           <button
             ref={menuButtonRef}
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="inline-flex h-11 w-11 items-center justify-center rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2"
+            className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2"
             aria-expanded={mobileMenuOpen}
             aria-controls="mobile-navigation-menu"
             aria-label={
@@ -165,7 +165,7 @@ export function Header() {
           ref={mobileMenuRef}
           className="border-b border-slate-200 bg-white px-4 pt-2 pb-6 shadow-xl lg:hidden sm:px-6"
         >
-          <nav aria-label="Mobile Navigation" className="flex flex-col space-y-1">
+          <nav aria-label={t.common.header.mobileNavAria} className="flex flex-col space-y-1">
             {navItems.map((item) => {
               const active = isActive(item.href);
               return (

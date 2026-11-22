@@ -34,12 +34,14 @@ const PAGE_TITLES: Record<Language, Record<string, string>> = {
     "/about": "About Us | BIZWORK-IT",
     "/services": "Services | BIZWORK-IT",
     "/contact": "Contact | BIZWORK-IT",
+    "/404": "Page Not Found | BIZWORK-IT",
   },
   vi: {
     "/": "BIZWORK-IT — Hỗ trợ Công nghệ Chuyên nghiệp",
     "/about": "Về Chúng Tôi | BIZWORK-IT",
     "/services": "Dịch vụ | BIZWORK-IT",
     "/contact": "Liên hệ | BIZWORK-IT",
+    "/404": "Không Tìm Thấy Trang | BIZWORK-IT",
   },
 };
 
@@ -86,7 +88,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     if (typeof document !== "undefined") {
       document.documentElement.lang = language;
       const titles = PAGE_TITLES[language];
-      const matchedTitle = titles[pathname] || titles["/"];
+      const matchedTitle = titles[pathname] || titles["/404"];
       if (matchedTitle) {
         document.title = matchedTitle;
       }

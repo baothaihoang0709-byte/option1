@@ -21,7 +21,10 @@ export default function ContactPage() {
       <ContactHero />
 
       {/* Sections 2 & 3: Corporate Info & Interactive Contact Form */}
-      <div className="py-12 sm:py-16 bg-slate-50/50 border-y border-slate-200/80">
+      <section
+        aria-labelledby="contact-form-heading"
+        className="py-16 sm:py-24 bg-slate-50/50 border-y border-slate-200/80"
+      >
         <Container>
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-12 items-start">
             <div className="lg:col-span-5">
@@ -32,7 +35,7 @@ export default function ContactPage() {
             </div>
           </div>
         </Container>
-      </div>
+      </section>
 
       {/* Section 4: What Happens Next */}
       <WhatHappensNext />

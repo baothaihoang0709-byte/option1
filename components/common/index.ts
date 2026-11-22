@@ -5,3 +5,4 @@ export { TypographicLogo, type TypographicLogoProps } from "./TypographicLogo";
 export { SkipToContent } from "./SkipToContent";
 export { Header } from "./Header";
 export { Footer } from "./Footer";
+export { NotFoundContent } from "./NotFoundContent";

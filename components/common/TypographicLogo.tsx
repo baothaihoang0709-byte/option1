@@ -17,6 +17,10 @@ export interface TypographicLogoProps {
    */
   withLink?: boolean;
   /**
+   * Accessible label for the logo link when withLink is true.
+   */
+  ariaLabel?: string;
+  /**
    * Additional custom CSS classes.
    */
   className?: string;
@@ -27,6 +31,7 @@ export function TypographicLogo({
   size = "md",
   withLink = true,
   className = "",
+  ariaLabel,
 }: TypographicLogoProps) {
   const sizeClasses = {
     sm: "text-lg",
@@ -64,7 +69,7 @@ export function TypographicLogo({
     return (
       <Link
         href="/"
-        aria-label="BIZWORK-IT — Return to Home"
+        aria-label={ariaLabel || "BIZWORK-IT — Return to Home"}
         className="inline-flex items-center rounded-md outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 transition-opacity hover:opacity-90"
       >
         {content}

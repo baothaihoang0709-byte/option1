@@ -43,7 +43,7 @@ export function CustomerCommitment() {
         />
 
         {/* Featured Commitment Hero Card */}
-        <div className="mt-12 overflow-hidden rounded-3xl border border-blue-200/90 bg-gradient-to-br from-blue-50/80 via-white to-sky-50/60 p-8 sm:p-12 lg:p-14 shadow-sm relative">
+        <div className="mt-14 overflow-hidden rounded-3xl border border-blue-200/90 bg-gradient-to-br from-blue-50/80 via-white to-sky-50/60 p-8 sm:p-12 lg:p-14 shadow-sm relative">
           {/* Subtle decorative shield icon background */}
           <div
             className="absolute top-4 right-4 text-blue-100/50 -z-0 pointer-events-none"

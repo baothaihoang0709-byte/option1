@@ -3,6 +3,7 @@ import { TranslationDictionary } from "../types";
 export const en: TranslationDictionary = {
   common: {
     skipToContent: "Skip to main content",
+    breadcrumbAria: "Breadcrumb",
     header: {
       nav: {
         home: "Home",
@@ -15,6 +16,9 @@ export const en: TranslationDictionary = {
       mobileMenuOpenAria: "Open navigation menu",
       mobileMenuCloseAria: "Close navigation menu",
       mobileLangLabel: "Language",
+      mainNavAria: "Main Navigation",
+      mobileNavAria: "Mobile Navigation",
+      logoHomeAria: "BIZWORK-IT — Return to Home",
     },
     footer: {
       tagline: "We make technology accessible!",
@@ -62,6 +66,14 @@ export const en: TranslationDictionary = {
         badgeRoiSub: "Optimize IT Budget",
         badgeSatTitle: "Satisfaction Guaranteed",
         badgeSatSub: "Customer-First Service",
+        diagramAria: "BIZWORK-IT Infrastructure Management Architecture diagram",
+        diagramCoreServer: "CORE SERVER",
+        diagramMultiOs: "Multi-OS",
+        diagramOsPlatforms: "Win / Linux",
+        diagramNetworks: "Networks",
+        diagramManagedLan: "Managed LAN",
+        diagramDatabases: "Databases",
+        diagramMaintenance: "Maintenance",
       },
     },
     valuePillars: {
@@ -94,7 +106,7 @@ export const en: TranslationDictionary = {
       subtitle:
         "We focus on the two critical areas where small to mid-sized companies gain the highest return: hands-on infrastructure support and proactive managed outsourcing.",
       highlightsTitle: "Key Solution Scope",
-      catalogButton: "View Complete Services Breakdown →",
+      catalogButton: "View Complete Services Breakdown",
       group1: {
         badge: "Core Technical Support",
         title: "Technical Support & Infrastructure",
@@ -130,7 +142,7 @@ export const en: TranslationDictionary = {
       subtitle:
         "Our systematic collaboration workflow ensures clear milestones, minimal business interruption, and cost predictability from first inquiry to ongoing management.",
       supportLink:
-        "Learn more about our corporate background and service philosophy →",
+        "Learn more about our corporate background and service philosophy",
       step1: {
         title: "Inquiry & Discovery",
         subtitle: "Understanding your current situation",
@@ -211,7 +223,7 @@ export const en: TranslationDictionary = {
       inquiriesLabel: "Communications & Inquiries",
       inquiriesValue:
         "All formal inquiries and project requirements are processed securely through our dedicated contact portal.",
-      cardButton: "Connect With Our Team via Contact →",
+      cardButton: "Connect With Our Team via Contact",
     },
     customerCommitment: {
       badge: "Customer Commitment",
@@ -248,7 +260,7 @@ export const en: TranslationDictionary = {
           "System configuration, user management, and security patches",
           "Cross-platform file sharing and environment compatibility",
         ],
-        link: "Discover our services in detail →",
+        link: "Discover our services in detail",
       },
       strength2: {
         badge: "Infrastructure",
@@ -260,7 +272,7 @@ export const en: TranslationDictionary = {
           "Troubleshooting connectivity bottlenecks and downtime",
           "Secure remote access configuration for distributed teams",
         ],
-        link: "Discover our services in detail →",
+        link: "Discover our services in detail",
       },
       strength3: {
         badge: "Data Reliability",
@@ -272,7 +284,7 @@ export const en: TranslationDictionary = {
           "Automated backup routines and recovery preparedness",
           "Assisting small to mid-sized projects with database upkeep",
         ],
-        link: "Discover our services in detail →",
+        link: "Discover our services in detail",
       },
     },
     partnershipCta: {
@@ -323,7 +335,7 @@ export const en: TranslationDictionary = {
           "Workstation setup, user profile management, and system updates",
           "Diagnosing system crashes, driver conflicts, and performance lag",
         ],
-        linkText: "Inquire about this support scope →",
+        linkText: "Inquire about this support scope",
       },
       domain2: {
         badge: "Office Infrastructure",
@@ -335,7 +347,7 @@ export const en: TranslationDictionary = {
           "Resolving network slowdowns, IP conflicts, and printer sharing",
           "Assisting distributed teams with secure remote connectivity setups",
         ],
-        linkText: "Inquire about this support scope →",
+        linkText: "Inquire about this support scope",
       },
       domain3: {
         badge: "Data Reliability",
@@ -347,7 +359,7 @@ export const en: TranslationDictionary = {
           "Configuring routine automated backup procedures",
           "Assisting small to mid-sized projects with data storage stability",
         ],
-        linkText: "Inquire about this support scope →",
+        linkText: "Inquire about this support scope",
       },
       bannerTitle: "Need assistance with an active system issue or setup?",
       bannerDesc:
@@ -502,14 +514,16 @@ export const en: TranslationDictionary = {
       bannerSuccessTitle: "Client-Side Validation Successful",
       bannerSuccessDesc:
         "All form fields have passed strict validation checks (Full Name, valid Business Email structure, selected service category, and message length).",
-      bannerPendingTitle: "Notice: Backend Delivery Pending",
+      bannerPendingTitle: "Notice: Client-Side Demonstration Only",
       bannerPendingDesc:
-        "In accordance with project scope (Task 13: UI & Client Validation Only), live email dispatch and database integration are scheduled for a future backend phase. No customer data has been stored or transmitted over the network.",
+        "This form currently performs frontend validation checks only. Direct email dispatch and database storage are pending future backend integration. No customer data has been stored, saved, or transmitted over the network.",
       buttonReset: "Reset Form to Test Again",
       privacyNotice:
-        "Data Protection & Privacy: Information provided is used solely for evaluating business requirements and will not be shared with unrelated third parties. (Live submission backend is pending configuration).",
+        "This form currently performs validation in your browser only. No information is submitted to or stored by BIZWORK-IT. Email delivery and secure data storage will be available after backend integration.",
       buttonSubmit: "Validate & Submit Inquiry",
       buttonSubmitDemo: "(Client Demo)",
+      buttonValidating: "Checking Fields...",
+      messageHint: "Minimum 10 characters required",
       footerAssurance: "Satisfaction Guaranteed • Tailored for SMBs",
     },
     whatHappensNext: {
@@ -548,5 +562,13 @@ export const en: TranslationDictionary = {
       assurance:
         "BIZWORKIT (S) PTE LTD • Singapore • Professional Technology Assistance",
     },
+  },
+  notFound: {
+    badge: "404 Error",
+    title: "Page Not Found",
+    description:
+      "The page you are looking for does not exist or has been moved. Please navigate using the menu or return to the homepage.",
+    buttonHome: "Return to Home",
+    buttonContact: "Contact Support",
   },
 };

@@ -22,7 +22,7 @@ export function ContactHero() {
 
       <Container>
         {/* Accessible Breadcrumb */}
-        <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-2 text-xs font-semibold text-slate-500">
+        <nav aria-label={t.common.breadcrumbAria} className="mb-6 flex items-center gap-2 text-xs font-semibold text-slate-500">
           <Link
             href="/"
             className="hover:text-blue-600 transition-colors outline-none focus-visible:ring-2 focus-visible:ring-blue-600 rounded-sm"
